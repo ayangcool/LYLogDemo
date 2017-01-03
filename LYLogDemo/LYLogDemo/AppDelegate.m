@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import <CocoaLumberjack.h>
+#import "ITLogFileManager.h"
+#import "ITLogFormatter.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,30 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    ViewController *vc = [[ViewController alloc] init];
+    UINavigationController *naviC = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = naviC;
+    /* 打印log的第一种方式
+     ITLogFormatter *logFormatter = [ITLogFormatter create];
+     [DDTTYLogger sharedInstance].logFormatter = logFormatter;
+     */
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] initWithLogFileManager:[ITLogFileManager create]];
+    /*
+     fileLogger.logFormatter = logFormatter;
+     */
+    //时间：24个小时
+    //    fileLogger.rollingFrequency = 60 * 60 * 24;
+    //容量：40M
+    fileLogger.maximumFileSize = 1024 * 1024 * 40;
+    [DDLog addLogger:fileLogger];
+    
     return YES;
 }
 

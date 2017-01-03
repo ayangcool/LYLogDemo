@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0336F85AA43C2B7BCA030AAD /* libPods-LYLogDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD2BE4A8FCB22331560DB34 /* libPods-LYLogDemo.a */; };
 		B36A17A21E1BA44E006BCBAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A17A11E1BA44E006BCBAA /* main.m */; };
 		B36A17A51E1BA44E006BCBAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A17A41E1BA44E006BCBAA /* AppDelegate.m */; };
 		B36A17A81E1BA44E006BCBAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A17A71E1BA44E006BCBAA /* ViewController.m */; };
-		B36A17AB1E1BA44E006BCBAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36A17A91E1BA44E006BCBAA /* Main.storyboard */; };
 		B36A17AD1E1BA44E006BCBAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36A17AC1E1BA44E006BCBAA /* Assets.xcassets */; };
 		B36A17B01E1BA44E006BCBAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36A17AE1E1BA44E006BCBAA /* LaunchScreen.storyboard */; };
+		B36A17BB1E1BA5AB006BCBAA /* ITLogFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A17B81E1BA5AB006BCBAA /* ITLogFileManager.m */; };
+		B36A17BC1E1BA5AB006BCBAA /* ITLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B36A17BA1E1BA5AB006BCBAA /* ITLogFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01D1234F2253484008C3283F /* Pods-LYLogDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYLogDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYLogDemo/Pods-LYLogDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2FD2BE4A8FCB22331560DB34 /* libPods-LYLogDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYLogDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE43265569D92F93766BE75 /* Pods-LYLogDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYLogDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYLogDemo/Pods-LYLogDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B36A179D1E1BA44E006BCBAA /* LYLogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYLogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36A17A11E1BA44E006BCBAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B36A17A31E1BA44E006BCBAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B36A17A41E1BA44E006BCBAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B36A17A61E1BA44E006BCBAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B36A17A71E1BA44E006BCBAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B36A17AA1E1BA44E006BCBAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B36A17AC1E1BA44E006BCBAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B36A17AF1E1BA44E006BCBAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B36A17B11E1BA44E006BCBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36A17B71E1BA5AB006BCBAA /* ITLogFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLogFileManager.h; sourceTree = "<group>"; };
+		B36A17B81E1BA5AB006BCBAA /* ITLogFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLogFileManager.m; sourceTree = "<group>"; };
+		B36A17B91E1BA5AB006BCBAA /* ITLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLogFormatter.h; sourceTree = "<group>"; };
+		B36A17BA1E1BA5AB006BCBAA /* ITLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLogFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0336F85AA43C2B7BCA030AAD /* libPods-LYLogDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160726B094F91AE92F79BB58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FD2BE4A8FCB22331560DB34 /* libPods-LYLogDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C9A1D75D799B48C9075145E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01D1234F2253484008C3283F /* Pods-LYLogDemo.debug.xcconfig */,
+				5BE43265569D92F93766BE75 /* Pods-LYLogDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B36A17941E1BA44E006BCBAA = {
 			isa = PBXGroup;
 			children = (
 				B36A179F1E1BA44E006BCBAA /* LYLogDemo */,
 				B36A179E1E1BA44E006BCBAA /* Products */,
+				6C9A1D75D799B48C9075145E /* Pods */,
+				160726B094F91AE92F79BB58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,7 +90,10 @@
 				B36A17A41E1BA44E006BCBAA /* AppDelegate.m */,
 				B36A17A61E1BA44E006BCBAA /* ViewController.h */,
 				B36A17A71E1BA44E006BCBAA /* ViewController.m */,
-				B36A17A91E1BA44E006BCBAA /* Main.storyboard */,
+				B36A17B71E1BA5AB006BCBAA /* ITLogFileManager.h */,
+				B36A17B81E1BA5AB006BCBAA /* ITLogFileManager.m */,
+				B36A17B91E1BA5AB006BCBAA /* ITLogFormatter.h */,
+				B36A17BA1E1BA5AB006BCBAA /* ITLogFormatter.m */,
 				B36A17AC1E1BA44E006BCBAA /* Assets.xcassets */,
 				B36A17AE1E1BA44E006BCBAA /* LaunchScreen.storyboard */,
 				B36A17B11E1BA44E006BCBAA /* Info.plist */,
@@ -86,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B36A17B41E1BA44E006BCBAA /* Build configuration list for PBXNativeTarget "LYLogDemo" */;
 			buildPhases = (
+				2AFE97E8BB3886F95836460F /* 📦 Check Pods Manifest.lock */,
 				B36A17991E1BA44E006BCBAA /* Sources */,
 				B36A179A1E1BA44E006BCBAA /* Frameworks */,
 				B36A179B1E1BA44E006BCBAA /* Resources */,
+				B7B7DE72EA0D786FA6C53B7D /* 📦 Embed Pods Frameworks */,
+				CE9B96033759CF278F72B9A8 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,11 +173,58 @@
 			files = (
 				B36A17B01E1BA44E006BCBAA /* LaunchScreen.storyboard in Resources */,
 				B36A17AD1E1BA44E006BCBAA /* Assets.xcassets in Resources */,
-				B36A17AB1E1BA44E006BCBAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AFE97E8BB3886F95836460F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7B7DE72EA0D786FA6C53B7D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYLogDemo/Pods-LYLogDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE9B96033759CF278F72B9A8 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYLogDemo/Pods-LYLogDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B36A17991E1BA44E006BCBAA /* Sources */ = {
@@ -151,22 +232,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36A17A81E1BA44E006BCBAA /* ViewController.m in Sources */,
+				B36A17BC1E1BA5AB006BCBAA /* ITLogFormatter.m in Sources */,
 				B36A17A51E1BA44E006BCBAA /* AppDelegate.m in Sources */,
 				B36A17A21E1BA44E006BCBAA /* main.m in Sources */,
+				B36A17BB1E1BA5AB006BCBAA /* ITLogFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B36A17A91E1BA44E006BCBAA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B36A17AA1E1BA44E006BCBAA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B36A17AE1E1BA44E006BCBAA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -270,6 +345,7 @@
 		};
 		B36A17B51E1BA44E006BCBAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D1234F2253484008C3283F /* Pods-LYLogDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LYLogDemo/Info.plist;
@@ -281,6 +357,7 @@
 		};
 		B36A17B61E1BA44E006BCBAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE43265569D92F93766BE75 /* Pods-LYLogDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LYLogDemo/Info.plist;
@@ -309,6 +386,7 @@
 				B36A17B61E1BA44E006BCBAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
